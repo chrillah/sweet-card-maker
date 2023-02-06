@@ -26,9 +26,6 @@
 
 <template>
   <ul>
-    <li v-for="item in list" :key="item.id">
-      {{ item.id }}
-    </li>
     <ListItem
       v-for="item in list"
       :key="item.id"
