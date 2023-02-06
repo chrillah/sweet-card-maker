@@ -7,8 +7,17 @@ export default {
 }
 </script>
 <template>
-  <div>
+  <div class="wrapper">
     <h1>AboutView</h1>
     <TestList />
   </div>
 </template>
+
+<style>
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+</style>

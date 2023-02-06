@@ -12,3 +12,5 @@
   <NavBar />
   <!-- <HelloWorld msg="Hello World!" /> -->
 </template>
+<style>
+</style>
