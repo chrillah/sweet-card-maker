@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <RouterLink class="navbar-brand" to="/">Yo</RouterLink>
       <button
         class="navbar-toggler"
         type="button"
