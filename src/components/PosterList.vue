@@ -25,18 +25,12 @@
 </script>
 
 <template>
-  <div class="list-item-wrapper">
-    <PosterItem
-      v-for="item in list"
-      :key="item.id"
-      :list-name="item.name"
-      :image-src="item.image"
-    />
-  </div>
+  <PosterItem
+    v-for="item in list"
+    :key="item.id"
+    :title="item.name"
+    :image-src="item.image"
+  />
 </template>
 
-<style scoped>
-.list-item-wrapper{
-  padding: 1rem;
-}
-</style>
+<style scoped></style>

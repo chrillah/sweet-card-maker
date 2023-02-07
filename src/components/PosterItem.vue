@@ -11,13 +11,13 @@
   export default {
     data() {
       return {
-        name: this.listName,
+        name: this.title,
         image: this.imageSrc,
         descriptionImage: this.description
       }
     },
     props: {
-      listName: {
+      title: {
         type: String,
         required: true
       },
@@ -34,7 +34,8 @@
 </script>
 <style scoped>
 .poster-wrapper{
-  max-width: 600px;
+  max-width: 800px;
+  padding-bottom: 4rem;
 }
   .poster-container {
     display: flex;

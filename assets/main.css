@@ -17,18 +17,19 @@ h1{
   width: 100%;
 }
 
-/* .container {
+.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-} */
+}
 
 .intro-section{
   margin: 0 2rem;
 }
 
 .intro-text{
+  width: 100%;
   background-color: #FFFFFF;
   font-size: 4rem;
 }
