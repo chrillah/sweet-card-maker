@@ -3,60 +3,70 @@
     "id": "1",
     "name": "Shimmy Shimmy Ya",
     "description": "Beskrivning 1",
-    "image": "https://images.unsplash.com/photo-1524741946973-d1bebce72eea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+    "image": "https://images.unsplash.com/photo-1524741946973-d1bebce72eea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+    "color" : "background-color: #2A0057;"
   },
   {
     "id": "2",
     "name": "C.R.E.A.M.",
     "description": "Beskrivning 2",
-    "image" : "https://images.unsplash.com/photo-1544230067-510373762d24?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+    "image" : "https://images.unsplash.com/photo-1544230067-510373762d24?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+    "color" : "background-color: #9654DD;"
   },
   {
     "id": "3",
     "name": "Protect Ya Neck",
     "description": "Beskrivning 3",
-    "image" : "https://images.unsplash.com/photo-1484597353563-eda230e1a15c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+    "image" : "https://images.unsplash.com/photo-1484597353563-eda230e1a15c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+    "color" : "background-color: #6800D6;"
   },
   {
     "id": "4",
-    "name": "Namn 4",
+    "name": "La Linda",
     "description": "Beskrivning 4",
-    "image" : "https://images.unsplash.com/photo-1517196084897-498e0abd7c2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+    "image" : "https://images.unsplash.com/photo-1517196084897-498e0abd7c2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+    "color" : "background-color: #2D025C;"
   },
   {
     "id": "5",
     "name": "Namn 5",
     "description": "Beskrivning 5",
-    "image" : "https://images.unsplash.com/photo-1583065822497-4e152dcaed22?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"
+    "image" : "https://images.unsplash.com/photo-1583065822497-4e152dcaed22?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
+    "color" : "background-color: #4F00A3;"
   },
   {
     "id": "6",
     "name": "Namn 6",
     "description": "Beskrivning 6",
-    "image" : "https://images.unsplash.com/photo-1498262257252-c282316270bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+    "image" : "https://images.unsplash.com/photo-1542753172-bcd7253a78a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+    "color" : "background-color: #B4E0D4;"
   },
   {
     "id": "7",
     "name": "Namn 7",
     "description": "Beskrivning 7",
-    "image" : "https://images.unsplash.com/photo-1553526777-5ffa3b3248d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+    "image" : "https://images.unsplash.com/photo-1553526777-5ffa3b3248d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+    "color" : "background-color: #53A68E;"
   },
   {
     "id": "8",
     "name": "Namn 8",
     "description": "Beskrivning 8",
-    "image" : "https://images.unsplash.com/photo-1487552292919-eccbbd948cba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+    "image" : "https://images.unsplash.com/photo-1487552292919-eccbbd948cba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+    "color" : "background-color: #76948C;"
   },
   {
     "id": "9",
     "name": "Namn 9",
     "description": "Beskrivning 9",
-    "image" : "https://images.unsplash.com/photo-1483959651481-dc75b89291f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=349&q=80"
+    "image" : "https://images.unsplash.com/photo-1483959651481-dc75b89291f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=349&q=80",
+    "color" : "background-color: #00E09F;"
   },
   {
     "id": "10",
     "name": "Namn 10",
     "description": "Beskrivning 10",
-    "image" : "https://images.unsplash.com/photo-1514621166532-aa7eb1a3a2f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+    "image" : "https://images.unsplash.com/photo-1514621166532-aa7eb1a3a2f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+    "color" : "background-color: #50635E;"
   }
 ]

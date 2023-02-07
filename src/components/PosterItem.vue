@@ -1,5 +1,5 @@
 <template>
-  <div class="poster-wrapper">
+  <div class="poster-wrapper" :style="color">
     <div class="poster-container">
       <img class="image-poster" :src="image" :alt="descriptionImage" />
       <h1 class="name-title">{{ name }}</h1>
@@ -13,7 +13,8 @@
       return {
         name: this.title,
         image: this.imageSrc,
-        descriptionImage: this.description
+        descriptionImage: this.description,
+        color : this.bgColor
       }
     },
     props: {
@@ -28,6 +29,10 @@
       description: {
         type: String,
         required: true
+      },
+      bgColor :{
+        type : String,
+        required : true
       }
     }
   }
@@ -35,7 +40,9 @@
 <style scoped>
 .poster-wrapper{
   max-width: 800px;
-  padding-bottom: 4rem;
+  padding: 2rem;
+  margin: 4rem;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
   .poster-container {
     position: relative;

@@ -31,6 +31,7 @@
     :title="item.name"
     :image-src="item.image"
     :description="item.description"
+    :bg-color="item.color"
   />
 </template>
 
