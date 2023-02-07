@@ -26,6 +26,7 @@
 </template>
 <style scoped>
 .navbar{
+  z-index: 100;
   width: 100%;
   position: fixed;
   background-color: #FFFFFF;

@@ -1,8 +1,8 @@
 <template>
   <div class="poster-wrapper">
     <div class="poster-container">
-      <h1 class="name-title">{{ name }}</h1>
       <img class="image-poster" :src="image" :alt="descriptionImage" />
+      <h1 class="name-title">{{ name }}</h1>
     </div>
   </div>
 </template>
@@ -38,6 +38,7 @@
   padding-bottom: 4rem;
 }
   .poster-container {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -46,5 +47,12 @@
   .image-poster {
     height: auto;
     max-width: 100%;
+  }
+
+  .name-title{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 </style>
