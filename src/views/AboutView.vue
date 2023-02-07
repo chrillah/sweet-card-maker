@@ -17,6 +17,7 @@
 
 <style scoped>
   .wrapper {
+    padding-top: 10rem;
     width: 100%;
   }
   .container{
