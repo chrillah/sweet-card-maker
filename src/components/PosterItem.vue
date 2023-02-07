@@ -73,4 +73,11 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
+  @media (max-width: 450px) {
+    .poster-wrapper{
+      margin: 1rem;
+      padding: 1rem;
+    }
+  }
 </style>
