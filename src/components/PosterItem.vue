@@ -2,7 +2,7 @@
   <div class="poster-wrapper" :style="color">
     <div class="poster-container">
       <img class="image-poster" :src="image" :alt="descriptionImage" />
-      <h1 class="name-title">{{ name }}</h1>
+      <h1 :style="font" class="name-title">{{ name }}</h1>
     </div>
   </div>
 </template>
@@ -14,7 +14,8 @@
         name: this.title,
         image: this.imageSrc,
         descriptionImage: this.description,
-        color : this.bgColor
+        color : this.bgColor,
+        font : this.fontStyle
       }
     },
     props: {
@@ -31,6 +32,10 @@
         required: true
       },
       bgColor :{
+        type : String,
+        required : true
+      },
+      fontStyle : {
         type : String,
         required : true
       }
@@ -59,7 +64,6 @@
   .name-title{
     background-color: #FFFFFF;
     padding: 1rem;
-    font-style: italic;
     position: absolute;
     top:50%;
     left: 50%;
