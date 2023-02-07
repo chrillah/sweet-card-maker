@@ -26,7 +26,9 @@
 </template>
 <style scoped>
 .navbar{
+  width: 100%;
   position: fixed;
+  background-color: #FFFFFF;
 }
 .logo{
   width: 100px;
