@@ -25,12 +25,16 @@
   <RouterView />
 </template>
 <style scoped>
+.navbar{
+  position: fixed;
+}
 .logo{
   width: 100px;
   height: auto;
 }
 
 .nav-link{
+  font-family: monospace;
   font-weight: 800;
   color: black;
 }
