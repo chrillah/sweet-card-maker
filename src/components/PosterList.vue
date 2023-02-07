@@ -30,6 +30,7 @@
     :key="item.id"
     :title="item.name"
     :image-src="item.image"
+    :description="item.description"
   />
 </template>
 

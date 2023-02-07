@@ -58,4 +58,12 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+  .misc{
+    background-color: #FFFFFF;
+    padding: 1rem;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 </style>
