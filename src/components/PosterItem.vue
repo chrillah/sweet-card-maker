@@ -50,6 +50,9 @@
   }
 
   .name-title{
+    background-color: #FFFFFF;
+    padding: 1rem;
+    font-style: italic;
     position: absolute;
     top:50%;
     left: 50%;
