@@ -1,7 +1,9 @@
 <template>
-  <div class="poster-container">
-    <h1 class="name-title">{{ name }}</h1>
-    <img class="image-poster" :src="image" :alt="descriptionImage" />
+  <div class="poster-wrapper">
+    <div class="poster-container">
+      <h1 class="name-title">{{ name }}</h1>
+      <img class="image-poster" :src="image" :alt="descriptionImage" />
+    </div>
   </div>
 </template>
 
@@ -31,9 +33,15 @@
   }
 </script>
 <style scoped>
-.poster-container{
-  max-width: 500px;
+.poster-wrapper{
+  max-width: 600px;
 }
+  .poster-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .image-poster {
     height: auto;
     max-width: 100%;

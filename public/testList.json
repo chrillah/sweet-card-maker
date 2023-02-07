@@ -8,22 +8,26 @@
   {
     "id": "2",
     "name": "Namn 2",
-    "description": "Beskrivning 2"
+    "description": "Beskrivning 2",
+    "image" : "https://images.unsplash.com/photo-1544230067-510373762d24?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
   },
   {
     "id": "3",
     "name": "Namn 3",
-    "description": "Beskrivning 3"
+    "description": "Beskrivning 3",
+    "image" : "https://plus.unsplash.com/premium_photo-1673439987427-8e4a7fc5bf06?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"
   },
   {
     "id": "4",
     "name": "Namn 4",
-    "description": "Beskrivning 4"
+    "description": "Beskrivning 4",
+    "image" : "https://images.unsplash.com/photo-1517196084897-498e0abd7c2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
   },
   {
     "id": "5",
     "name": "Namn 5",
-    "description": "Beskrivning 5"
+    "description": "Beskrivning 5",
+    "image" : "https://images.unsplash.com/photo-1583065822497-4e152dcaed22?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"
   },
   {
     "id": "6",
