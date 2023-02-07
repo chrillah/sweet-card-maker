@@ -14,7 +14,7 @@
     </div>
     <div class="container">
       <div class="contact-wrapper">
-        <form class="contact-info">
+        <!-- <form class="contact-info">
           <label for="name">Namn:</label>
           <input type="text" id="name" name="name" />
 
@@ -22,6 +22,12 @@
           <input type="email" id="email" name="email" />
 
           <input type="submit" value="Skicka" />
+        </form> -->
+        <form class="contact-info">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="fname" />
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lname" />
         </form>
       </div>
       <CounterButton />
@@ -29,13 +35,20 @@
   </div>
 </template>
 <style scoped>
+  input[type='text'] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
   .contact-wrapper {
     width: 100%;
     display: grid;
     grid-template-areas: 'info img';
   }
   .contact-info {
-    background-color: #FFFFFF;
+    max-width: 500px;
+    background-color: #ffffff;
     grid-area: info;
   }
   .input-name {
