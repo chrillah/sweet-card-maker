@@ -15,7 +15,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <RouterLink class="nav-link active" aria-current="page" to="/">Home</RouterLink>
+          <RouterLink class="nav-link" aria-current="page" to="/">Home</RouterLink>
           <RouterLink class="nav-link" to="/about">About</RouterLink>
           <RouterLink class="nav-link" to="/contact">Contact</RouterLink>
         </div>
@@ -28,5 +28,15 @@
 .logo{
   width: 100px;
   height: auto;
+}
+
+.nav-link{
+  font-weight: 800;
+  color: black;
+}
+.nav-link:hover,.nav-link:focus{
+  background-color: indigo;
+  color: white;
+  font-weight: 400;
 }
 </style>
