@@ -1,52 +1,53 @@
 [
   {
-    "id" : "1",
-    "name" : "Namn 1",
-    "description" : "Beskrivning 1"
+    "id": "1",
+    "name": "Namn 1",
+    "description": "Beskrivning 1",
+    "image": "https://images.unsplash.com/photo-1629216509258-4dbd7880e605?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"
   },
   {
-    "id" : "2",
-    "name" : "Namn 2",
-    "description" : "Beskrivning 2"
+    "id": "2",
+    "name": "Namn 2",
+    "description": "Beskrivning 2"
   },
   {
-    "id" : "3",
-    "name" : "Namn 3",
-    "description" : "Beskrivning 3"
+    "id": "3",
+    "name": "Namn 3",
+    "description": "Beskrivning 3"
   },
   {
-    "id" : "4",
-    "name" : "Namn 4",
-    "description" : "Beskrivning 4"
+    "id": "4",
+    "name": "Namn 4",
+    "description": "Beskrivning 4"
   },
   {
-    "id" : "5",
-    "name" : "Namn 5",
-    "description" : "Beskrivning 5"
+    "id": "5",
+    "name": "Namn 5",
+    "description": "Beskrivning 5"
   },
   {
-    "id" : "6",
-    "name" : "Namn 6",
-    "description" : "Beskrivning 6"
+    "id": "6",
+    "name": "Namn 6",
+    "description": "Beskrivning 6"
   },
   {
-    "id" : "7",
-    "name" : "Namn 7",
-    "description" : "Beskrivning 7"
+    "id": "7",
+    "name": "Namn 7",
+    "description": "Beskrivning 7"
   },
   {
-    "id" : "8",
-    "name" : "Namn 8",
-    "description" : "Beskrivning 8"
+    "id": "8",
+    "name": "Namn 8",
+    "description": "Beskrivning 8"
   },
   {
-    "id" : "9",
-    "name" : "Namn 9",
-    "description" : "Beskrivning 9"
+    "id": "9",
+    "name": "Namn 9",
+    "description": "Beskrivning 9"
   },
   {
-    "id" : "10",
-    "name" : "Namn 10",
-    "description" : "Beskrivning 10"
+    "id": "10",
+    "name": "Namn 10",
+    "description": "Beskrivning 10"
   }
 ]
