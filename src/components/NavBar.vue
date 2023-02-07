@@ -46,4 +46,8 @@
   color: white;
   font-weight: 400;
 }
+
+.navbar-toggler{
+  color: #000000;
+}
 </style>
