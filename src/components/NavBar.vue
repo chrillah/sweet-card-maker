@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <RouterLink class="navbar-brand" to="/">Yo</RouterLink>
+      <RouterLink class="navbar-brand" to="/"><img class="logo" src="/assets/img/logo.png" alt="" /></RouterLink>
       <button
         class="navbar-toggler"
         type="button"
@@ -24,5 +24,9 @@
   </nav>
   <RouterView />
 </template>
-<style>
+<style scoped>
+.logo{
+  width: 100px;
+  height: auto;
+}
 </style>
