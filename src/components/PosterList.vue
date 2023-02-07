@@ -1,6 +1,6 @@
 <script>
   import axios from 'axios'
-  import ListItem from './ListItem.vue'
+  import PosterItem from './PosterItem.vue'
   export default {
     mounted() {
       this.fetchData()
@@ -20,13 +20,13 @@
         list: []
       }
     },
-    components: { ListItem }
+    components: { PosterItem }
   }
 </script>
 
 <template>
   <div class="list-item-wrapper">
-    <ListItem
+    <PosterItem
       v-for="item in list"
       :key="item.id"
       :list-name="item.name"

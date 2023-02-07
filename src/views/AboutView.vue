@@ -1,26 +1,24 @@
 <script>
-  import TestList from '../components/TestList.vue'
+  import PosterList from '../components/PosterList.vue'
   export default {
     components: {
-      TestList
+      PosterList
     }
   }
 </script>
 <template>
   <div class="wrapper">
+    <div class="intro-section">
+      <h1 class="intro-text">Section</h1>
+    </div>
     <div class="container">
-      <h1>AboutView</h1>
-      <TestList />
+      <PosterList />
     </div>
   </div>
 </template>
 
 <style scoped>
-  .wrapper {
-    padding-top: 10rem;
-    width: 100%;
-  }
-  .container{
+  .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
