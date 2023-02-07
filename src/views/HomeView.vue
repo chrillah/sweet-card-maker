@@ -1,1 +1,11 @@
-<template><h1>HomeView</h1></template>
+<script>
+  import HeroImage from '../components/HeroImage.vue'
+  export default {
+    components: {
+      HeroImage
+    }
+  }
+</script>
+<template>
+  <HeroImage />
+</template>
