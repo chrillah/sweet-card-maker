@@ -1,7 +1,9 @@
 <template>
   <form class="input-info">
     <div class="input-container">
+      <p class="label">Input your name</p>
       <input type="text" v-model="name" />
+      <p class="label">Write down a quote</p>
       <input type="text" v-model="quote" />
     </div>
     <input
@@ -30,7 +32,7 @@
       name(newName, oldName) {
         console.log(`${oldName} has changed to ${newName}`)
       },
-      quote(newQuote, oldQuote){
+      quote(newQuote, oldQuote) {
         console.log(`${oldQuote} has changed to ${newQuote}`)
       }
     }
@@ -59,5 +61,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+
+  input[type='button'] {
+    margin-top: 4rem;
   }
 </style>
