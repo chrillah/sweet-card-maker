@@ -3,10 +3,11 @@
     <div class="input-container">
       <!-- <p class="label">Input your name</p>
       <input type="text" v-model="name" /> -->
-      <p class="label">Write down a quote</p>
+      <p class="label">Write a quote</p>
       <input type="text" v-model="quote" />
     </div>
     <input
+      v-if="quote"
       type="button"
       value="Make me a poster yo"
       @click="sendQuote"
@@ -19,14 +20,13 @@
   export default {
     data() {
       return {
-        name: '',
         quote: ''
       }
     },
     methods: {
       sendQuote(inputFromUser) {
         inputFromUser = this.quote
-        this.$router.push({ name : 'user', params: { inputFromUser } })
+        this.$router.push({ name: 'user', params: { inputFromUser } })
       }
     },
     watch: {
@@ -55,6 +55,7 @@
     padding: 1rem;
     background-color: #ffffff;
     box-shadow: var(--box-shadow);
+    min-height: 250px;
   }
 
   .input-container {
@@ -65,6 +66,6 @@
   }
 
   input[type='button'] {
-    margin-top: 4rem;
+    margin-top: 2rem;
   }
 </style>
