@@ -9,7 +9,7 @@
 <template>
   <div class="wrapper">
     <div class="intro-section">
-      <h1 class="intro-text">Section</h1>
+      <h1 class="intro-text">Some of our collection</h1>
     </div>
     <div class="container">
       <PosterList />
