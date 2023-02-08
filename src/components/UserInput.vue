@@ -24,8 +24,10 @@
       }
     },
     methods: {
-      testFunction() {
+      testFunction(inputFromUser) {
         console.log(this.name + this.quote)
+        inputFromUser = this.name
+        this.$router.push({ name : 'user', params: { inputFromUser } })
       }
     },
     watch: {

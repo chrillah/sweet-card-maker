@@ -4,6 +4,7 @@ import AboutView from './views/AboutView.vue'
 import ContactView from './views/ContactView.vue'
 import HomeView from './views/HomeView.vue'
 import DiyView from './views/DiyView.vue'
+import UserPosterView from './views/UserPosterView.vue'
 
 export default createRouter({
   history: createWebHashHistory(),
@@ -23,6 +24,11 @@ export default createRouter({
     {
       component: HomeView,
       path: '/'
+    },
+    {
+      component : UserPosterView,
+      name : 'user',
+      path: '/user/:inputFromUser'
     }
   ]
 })
