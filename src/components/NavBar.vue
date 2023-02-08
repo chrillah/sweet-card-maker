@@ -19,6 +19,7 @@
           <RouterLink class="nav-link" to="/collection">Collection</RouterLink>
           <!-- <RouterLink class="nav-link" to="/contact">Contact</RouterLink> -->
           <RouterLink class="nav-link" to="/diy">DIY</RouterLink>
+          <RouterLink class="nav-link" to="/crazyCorner">Crazy Corner</RouterLink>
         </div>
       </div>
     </div>
