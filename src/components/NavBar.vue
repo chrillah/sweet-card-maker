@@ -18,6 +18,7 @@
           <RouterLink class="nav-link" aria-current="page" to="/">Home</RouterLink>
           <RouterLink class="nav-link" to="/about">About</RouterLink>
           <RouterLink class="nav-link" to="/contact">Contact</RouterLink>
+          <RouterLink class="nav-link" to="/diy">DIY</RouterLink>
         </div>
       </div>
     </div>
@@ -42,8 +43,10 @@
   color: black;
 }
 .nav-link:hover,.nav-link:focus{
-  background-color: indigo;
-  color: white;
+  /* background-color: indigo; */
+  /* color: white; */
+  background-color: var(--active-color);
+
   font-weight: 400;
 }
 

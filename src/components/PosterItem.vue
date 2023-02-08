@@ -47,7 +47,7 @@
   max-width: 800px;
   padding: 2rem;
   margin: 4rem;
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  box-shadow: var(--box-shadow)
 }
   .poster-container {
     position: relative;
