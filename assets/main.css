@@ -20,7 +20,8 @@ body {
 /* CSS */
 .button-28 {
   appearance: none;
-  background-color: transparent;
+  /* background-color: transparent; */
+  background-color: #FFFFFF;
   border: 1px solid #000000;
   border-radius: 5px;
   box-sizing: border-box;
