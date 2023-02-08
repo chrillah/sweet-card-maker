@@ -1,6 +1,7 @@
 <template>
   <form class="input-info">
     <div class="input-container">
+      <p>Talk to your self</p>
       <input type="text" v-model="inputValue" />
       <input type="button" @click="sendValue" value="Send" class="button-28" />
     </div>
