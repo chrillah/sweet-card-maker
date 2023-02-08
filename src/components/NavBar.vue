@@ -17,7 +17,7 @@
         <div class="navbar-nav">
           <RouterLink class="nav-link" aria-current="page" to="/">Home</RouterLink>
           <RouterLink class="nav-link" to="/about">About</RouterLink>
-          <RouterLink class="nav-link" to="/contact">Contact</RouterLink>
+          <!-- <RouterLink class="nav-link" to="/contact">Contact</RouterLink> -->
           <RouterLink class="nav-link" to="/diy">DIY</RouterLink>
         </div>
       </div>
