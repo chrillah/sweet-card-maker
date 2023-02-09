@@ -78,5 +78,21 @@
     "image" : "https://images.unsplash.com/photo-1514621166532-aa7eb1a3a2f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
     "color" : "background-color: #50635E;",
     "fontStyle" : "font-family: 'Monoton', cursive;"
+  },
+  {
+    "id": "11",
+    "name": "Snakes",
+    "description": "Beskrivning 10",
+    "image" : "https://images.unsplash.com/photo-1629216509258-4dbd7880e605?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+    "color" : "background-color: #50635E;",
+    "fontStyle" : "font-family: 'Monoton', cursive;"
+  },
+  {
+    "id": "12",
+    "name": "Snakes",
+    "description": "Beskrivning 10",
+    "image" : "https://images.unsplash.com/photo-1607136280537-6695af76d644?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+    "color" : "background-color: #50635E;",
+    "fontStyle" : "font-family: 'Monoton', cursive;"
   }
 ]

@@ -2,7 +2,7 @@
   <div class="wrapper">
     <div class="container">
       <div class="button-container">
-        <RouterLink class="button-28" to="/diy">Make a new one</RouterLink>
+        <RouterLink class="button-28 diy-btn" to="/diy">Make a new one</RouterLink>
       </div>
       <PosterItem
         v-for="item in list"
@@ -46,4 +46,7 @@
     margin: 5rem;
     align-content: center;
   }
+  .diy-btn:hover{
+    color: #000000
+}
 </style>
