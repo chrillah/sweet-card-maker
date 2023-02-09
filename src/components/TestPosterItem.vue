@@ -81,6 +81,13 @@
   .btn{
     border: none;
     background: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    will-change: transform;
+  }
+
+  .btn:hover{
+    transform: translateY(-4px);
+
   }
 
   @media (max-width: 450px) {
