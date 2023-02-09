@@ -45,8 +45,6 @@
     width: 100%;
     padding: 0.5rem 2rem;
     margin: 0.5rem;
-    /* padding: 12px;
-    margin: 8px; */
     box-sizing: border-box;
   }
 

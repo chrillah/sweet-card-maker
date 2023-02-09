@@ -18,6 +18,7 @@ const state = {
   counter: 0,
   right: -50,
   numberOfClick: 0,
+  posterStyles : [],
   fonts: {
     mono: "font-family: 'Xanh Mono', monospace;",
     serif: "font-family: 'Playfair Display', serif;",
