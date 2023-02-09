@@ -1,10 +1,12 @@
 <template>
-  <div class="poster-wrapper" :style="color">
-    <div class="poster-container">
-      <img class="image-poster" :src="image" />
-      <h1 :style="font" class="name-title">{{ name }}</h1>
+  <button @click="saveStyle">
+    <div class="poster-wrapper" :style="color">
+      <div class="poster-container">
+        <img class="image-poster" :src="image" />
+        <h1 :style="font" class="name-title">{{ name }}</h1>
+      </div>
     </div>
-  </div>
+  </button>
 </template>
 
 <script>
@@ -18,12 +20,15 @@
         font: this.fontStyle
       }
     },
+    emits: ['sendStyle'],
     methods: {
       saveStyle() {
+        this.style.title = this.name
         this.style.imageSrc = this.image
         this.style.bgColor = this.color
         this.style.fontStyle = this.font
-        return this.style
+        this.$emit('sendStyle', this.style)
+        console.log('Yo')
       }
     },
     props: {

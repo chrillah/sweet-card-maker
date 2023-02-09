@@ -18,14 +18,14 @@
         font: this.fontStyle
       }
     },
-    methods: {
-      saveStyle() {
-        this.style.imageSrc = this.image
-        this.style.bgColor = this.color
-        this.style.fontStyle = this.font
-        return this.style
-      }
-    },
+    // methods: {
+    //   saveStyle() {
+    //     this.style.imageSrc = this.image
+    //     this.style.bgColor = this.color
+    //     this.style.fontStyle = this.font
+    //     return this.style
+    //   }
+    // },
     props: {
       title: {
         type: String,
