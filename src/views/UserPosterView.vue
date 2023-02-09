@@ -4,15 +4,17 @@
       <div class="button-container">
         <RouterLink class="button-28 diy-btn" to="/diy">Make a new one</RouterLink>
       </div>
-      <TestPosterItem
-        @send-style="received"
-        v-for="item in list"
-        :key="item.id"
-        :title="$route.params.inputFromUser"
-        :image-src="item.image"
-        :bg-color="item.color"
-        :font-style="item.fontStyle"
-      />
+      <div class="container" v-if="!show">
+        <TestPosterItem
+          @send-style="received"
+          v-for="item in list"
+          :key="item.id"
+          :title="$route.params.inputFromUser"
+          :image-src="item.image"
+          :bg-color="item.color"
+          :font-style="item.fontStyle"
+        />
+      </div>
 
       <div v-if="show">
         <PosterItem
@@ -22,15 +24,6 @@
           :font-style="receivedObject.fontStyle"
         />
       </div>
-      <!-- <PosterItem
-        v-for="item in list"
-        :key="item.id"
-        :title="$route.params.inputFromUser"
-        :image-src="item.image"
-        :description="item.description"
-        :bg-color="item.color"
-        :font-style="item.fontStyle"
-      /> -->
     </div>
   </div>
 </template>
@@ -51,9 +44,12 @@
         })
         this.list = res.data
       },
-      received(object) {
-        this.receivedObject = {}
-        this.receivedObject = object
+      received(savedPoster) {
+        this.receivedObject = savedPoster
+        
+        // console.log(this.receivedObject)
+        // this.$router.push({ name : 'poster', path : '/poster', params:{ savedPoster } })
+
         this.show = true
       }
     },
@@ -61,7 +57,7 @@
       return {
         list: [],
         receivedObject: {},
-        show : false
+        show: false
       }
     },
     components: {

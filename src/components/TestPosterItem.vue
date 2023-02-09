@@ -28,7 +28,6 @@
         this.style.bgColor = this.color
         this.style.fontStyle = this.font
         this.$emit('sendStyle', this.style)
-        console.log('Yo')
       }
     },
     props: {
