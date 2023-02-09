@@ -56,6 +56,7 @@ body {
 }
 
 .button-28:hover {
+  color: #000000;
   background-color: var(--active-color);
   box-shadow: rgba(203, 183, 255, 0.7) 0 8px 15px;
   transform: translateY(-4px);
@@ -66,8 +67,6 @@ body {
   transform: translateY(0);
 }
 
-/* <!-- HTML !-->
-<button class="button-89" role="button">Button 89</button> */
 
 /* CSS */
 .button-89 {

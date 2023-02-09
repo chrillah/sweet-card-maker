@@ -5,7 +5,6 @@
       <ComputedComponent />
       <ChildComponent @input-value-from-child="fromChild" />
       <h1 class="bg">{{ msg }}</h1>
-      <!-- <CounterButton class="button-28" /> -->
     </div>
   </div>
   <CarRace />
@@ -13,13 +12,11 @@
 
 <script>
   import ChildComponent from '../components/ChildComponent.vue'
-  // import CounterButton from '../components/CounterButton.vue'
   import ComputedComponent from '../components/ComputedComponent.vue'
   import CarRace from '../components/CarRace.vue'
   export default {
     components: {
       ChildComponent,
-      // CounterButton,
       ComputedComponent,
       CarRace
     },
