@@ -46,7 +46,7 @@
     margin: 5rem;
     align-content: center;
   }
-  .diy-btn:hover{
-    color: #000000
-}
+  .diy-btn:hover {
+    color: #000000;
+  }
 </style>
