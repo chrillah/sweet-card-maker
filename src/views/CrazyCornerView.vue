@@ -1,23 +1,27 @@
 <template>
   <div class="wrapper">
+    <h1 class="intro-text">Crazy corner</h1>
     <div class="container">
       <ComputedComponent />
       <ChildComponent @input-value-from-child="fromChild" />
       <h1 class="bg">{{ msg }}</h1>
-      <CounterButton class="button-28" />
+      <!-- <CounterButton class="button-28" /> -->
     </div>
   </div>
+  <CarRace />
 </template>
 
 <script>
   import ChildComponent from '../components/ChildComponent.vue'
-  import CounterButton from '../components/CounterButton.vue'
+  // import CounterButton from '../components/CounterButton.vue'
   import ComputedComponent from '../components/ComputedComponent.vue'
+  import CarRace from '../components/CarRace.vue'
   export default {
     components: {
       ChildComponent,
-      CounterButton,
-      ComputedComponent
+      // CounterButton,
+      ComputedComponent,
+      CarRace
     },
     data() {
       return {
