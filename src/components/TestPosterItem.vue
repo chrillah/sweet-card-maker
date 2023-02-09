@@ -1,5 +1,5 @@
 <template>
-  <button @click="saveStyle">
+  <button class="btn" @click="saveStyle">
     <div class="poster-wrapper" :style="color">
       <div class="poster-container">
         <img class="image-poster" :src="image" />
@@ -77,6 +77,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+  .btn{
+    border: none;
+    background: none;
   }
 
   @media (max-width: 450px) {

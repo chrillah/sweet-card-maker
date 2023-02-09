@@ -63,7 +63,6 @@
     height: auto;
     width: 100%;
   }
-
   .name-title {
     text-align: center;
     background-color: #ffffff;

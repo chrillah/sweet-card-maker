@@ -3,32 +3,32 @@
     <h1 class="intro-text">Crazy corner</h1>
     <div class="container">
       <ComputedComponent />
-      <ChildComponent @input-value-from-child="fromChild" />
-      <h1 class="bg">{{ msg }}</h1>
+      <!-- <ChildComponent @input-value-from-child="fromChild" />
+      <h1 class="bg">{{ msg }}</h1> -->
     </div>
   </div>
   <CarRace />
 </template>
 
 <script>
-  import ChildComponent from '../components/ChildComponent.vue'
+  // import ChildComponent from '../components/ChildComponent.vue'
   import ComputedComponent from '../components/ComputedComponent.vue'
   import CarRace from '../components/CarRace.vue'
   export default {
     components: {
-      ChildComponent,
+      // ChildComponent,
       ComputedComponent,
       CarRace
     },
     data() {
       return {
-        msg: ''
+        // msg: ''
       }
     },
     methods: {
-      fromChild(input) {
-        this.msg = input
-      }
+      // fromChild(input) {
+      //   this.msg = input
+      // }
     }
   }
 </script>
