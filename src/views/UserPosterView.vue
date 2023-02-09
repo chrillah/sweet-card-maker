@@ -1,6 +1,9 @@
 <template>
   <div class="wrapper">
     <div class="container">
+      <div class="button-container">
+        <RouterLink class="button-28" to="/diy">Make a new one</RouterLink>
+      </div>
       <PosterItem
         v-for="item in list"
         :key="item.id"
@@ -38,3 +41,9 @@
     components: { PosterItem }
   }
 </script>
+<style scoped>
+  .button-container {
+    margin: 5rem;
+    align-content: center;
+  }
+</style>

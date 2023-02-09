@@ -8,6 +8,7 @@
 </script>
 <template>
   <div class="wrapper">
+    <h1 class="intro-text">Do it yourself</h1>
     <div class="container">
       <UserInput />
     </div>
