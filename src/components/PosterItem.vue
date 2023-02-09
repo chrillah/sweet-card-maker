@@ -44,9 +44,9 @@
 </script>
 <style scoped>
 .poster-wrapper{
-  max-width: 800px;
+  /* max-width: 800px; */
   padding: 2rem;
-  margin: 4rem;
+  margin-bottom: 2rem;
   box-shadow: var(--box-shadow)
 }
   .poster-container {
@@ -58,7 +58,7 @@
   }
   .image-poster {
     height: auto;
-    max-width: 100%;
+    width: 100%;
   }
 
   .name-title{

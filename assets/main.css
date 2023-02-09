@@ -113,7 +113,7 @@ p{
 }
 
 .wrapper {
-  padding-top: 10rem;
+  padding-top: 4rem;
   width: 100%;
 }
 
@@ -135,6 +135,7 @@ p{
   width: 100%;
   background-color: #FFFFFF;
   font-size: 4rem;
+  padding: 6rem 0;
 }
 
 .footer-wrapper{
