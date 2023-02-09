@@ -16,13 +16,39 @@
 </template>
 
 <style scoped>
-.grid-container{
-  line-height: 0;
-  -webkit-column-count: 3;
-  -webkit-column-gap: 0px;
-  -moz-column-count: 3;
-  -moz-column-gap: 0px;
-  column-count: auto-fit;
-  column-gap: 2rem;
-}
+  .grid-container {
+    margin: 0 2rem;
+    line-height: 0;
+    -webkit-column-count: 1;
+    -webkit-column-gap: 0px;
+    -moz-column-count: 1;
+    -moz-column-gap: 0px;
+    column-count: 1;
+    column-gap: 2rem;
+  }
+
+  @media (min-width: 650px) {
+    .grid-container {
+      margin: 0 2rem;
+      line-height: 0;
+      -webkit-column-count: 2;
+      -webkit-column-gap: 0px;
+      -moz-column-count: 2;
+      -moz-column-gap: 0px;
+      column-count:2;
+      column-gap: 2rem;
+    }
+  }
+  @media (min-width: 980px) {
+    .grid-container {
+      margin: 0 2rem;
+      line-height: 0;
+      -webkit-column-count: 3;
+      -webkit-column-gap: 0px;
+      -moz-column-count: 3;
+      -moz-column-gap: 0px;
+      column-count:3;
+      column-gap: 2rem;
+    }
+  }
 </style>
