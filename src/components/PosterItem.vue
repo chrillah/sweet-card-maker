@@ -62,6 +62,7 @@
   }
 
   .name-title{
+    text-align: center;
     background-color: #FFFFFF;
     padding: 1rem;
     position: absolute;

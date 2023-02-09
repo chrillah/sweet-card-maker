@@ -21,7 +21,10 @@ const state = {
   fonts: {
     mono: "font-family: 'Xanh Mono', monospace;",
     serif: "font-family: 'Playfair Display', serif;",
-    display: "font-family: 'Monoton';"
+    display: "font-family: 'Monoton';",
+    monoItalic: "font-family: 'Xanh Mono', monospace;font-style: italic;",
+    serifItalic: "font-family: 'Playfair Display', serif;font-style: italic;",
+    displayItalic: "font-family: 'Monoton';font-style: italic;"
   },
   bgColors: {
     darkPurple: 'background-color: #2A0057;',

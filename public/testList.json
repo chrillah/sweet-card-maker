@@ -5,7 +5,7 @@
     "description": "Beskrivning 1",
     "image": "https://images.unsplash.com/photo-1524741946973-d1bebce72eea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
     "color": "background-color: #2A0057;",
-    "fontStyle": "font-style: italic; text-align: center;"
+    "fontStyle": "font-style: italic;"
   },
   {
     "id": "2",
@@ -21,7 +21,7 @@
     "description": "Beskrivning 3",
     "image": "https://images.unsplash.com/photo-1484597353563-eda230e1a15c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
     "color": "background-color: #6800D6;",
-    "fontStyle": "font-style: italic; text-align: center; font-family: 'Xanh Mono', monospace;"
+    "fontStyle": "font-style: italic; font-family: 'Xanh Mono', monospace;"
   },
   {
     "id": "4",
@@ -29,7 +29,7 @@
     "description": "Beskrivning 4",
     "image": "https://images.unsplash.com/photo-1517196084897-498e0abd7c2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
     "color": "background-color: #2D025C;",
-    "fontStyle": "font-style: italic; text-align: center;"
+    "fontStyle": "font-style: italic;"
   },
   {
     "id": "5",
@@ -37,7 +37,7 @@
     "description": "Beskrivning 5",
     "image": "https://images.unsplash.com/photo-1583065822497-4e152dcaed22?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
     "color": "background-image: url('https://images.unsplash.com/photo-1565619624098-cf4168a7cd9d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80')",
-    "fontStyle": "text-align: center; font-family: 'Xanh Mono', monospace;"
+    "fontStyle": "font-family: 'Xanh Mono', monospace;"
   },
   {
     "id": "6",
@@ -45,7 +45,7 @@
     "description": "Beskrivning 6",
     "image": "https://images.unsplash.com/photo-1542753172-bcd7253a78a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
     "color": "background-color: #B4E0D4;",
-    "fontStyle": "font-style: italic; text-align: center;"
+    "fontStyle": "font-style: italic;"
   },
   {
     "id": "7",
@@ -53,7 +53,7 @@
     "description": "Beskrivning 7",
     "image": "https://images.unsplash.com/photo-1553526777-5ffa3b3248d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
     "color": "background-color: #53A68E;",
-    "fontStyle": "font-family: 'Monoton', cursive; text-align: center;"
+    "fontStyle": "font-family: 'Monoton', cursive;"
   },
   {
     "id": "8",
@@ -61,7 +61,7 @@
     "description": "Beskrivning 8",
     "image": "https://images.unsplash.com/photo-1487552292919-eccbbd948cba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
     "color": "background-color: #76948C;",
-    "fontStyle": "font-style: italic; text-align: center;"
+    "fontStyle": "font-style: italic;"
   },
   {
     "id": "9",
@@ -69,7 +69,7 @@
     "description": "Beskrivning 9",
     "image": "https://images.unsplash.com/photo-1483959651481-dc75b89291f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=349&q=80",
     "color": "background-color: #00E09F;",
-    "fontStyle": "font-style: italic; text-align: center;"
+    "fontStyle": "font-style: italic;"
   },
   {
     "id": "10",
@@ -85,7 +85,7 @@
     "description": "Beskrivning 10",
     "image": "https://images.unsplash.com/photo-1629216509258-4dbd7880e605?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
     "color": "background-image: url('https://images.unsplash.com/photo-1544230067-510373762d24?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80')",
-    "fontStyle": "font-style: italic; text-align: center;"
+    "fontStyle": "font-style: italic;"
   },
   {
     "id": "12",
