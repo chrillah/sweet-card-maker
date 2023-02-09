@@ -15,7 +15,8 @@
         image: this.imageSrc,
         descriptionImage: this.description,
         color : this.bgColor,
-        font : this.fontStyle
+        font : this.fontStyle,
+        // shadow : this.boxShadow
       }
     },
     props: {
@@ -38,7 +39,11 @@
       fontStyle : {
         type : String,
         required : true
-      }
+      },
+      // boxShadow : {
+      //   type : String,
+      //   required : true
+      // }
     }
   }
 </script>
@@ -69,7 +74,6 @@
     top:50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
   }
 
   @media (max-width: 450px) {
