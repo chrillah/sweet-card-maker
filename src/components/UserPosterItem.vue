@@ -20,14 +20,14 @@
         font: this.fontStyle
       }
     },
-    emits: ['sendPoster'],
+    emits: ['sendCard'],
     methods: {
       saveStyle() {
         this.style.title = this.name
         this.style.imageSrc = this.image
         this.style.bgColor = this.color
         this.style.fontStyle = this.font
-        this.$emit('sendPoster', this.style)
+        this.$emit('sendCard', this.style)
       }
     },
     props: {

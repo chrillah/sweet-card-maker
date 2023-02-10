@@ -1,27 +1,27 @@
 <template>
   <div class="wrapper">
-    <h1 v-if="$store.state.showSaved" class="intro-text">Here is all your shit</h1>
-    <h1 v-if="!$store.state.showSaved" class="intro-text">You have to do it yourself</h1>
-    <div v-if="!$store.state.showSaved" class="button-container">
+    <h1 v-if="$store.state.showCards" class="intro-text">
+      Here is all your shit
+    </h1>
+
+
+
+    <div v-if="!$store.state.showCards" class="button-container">
+      <h1 class="intro-text">You have to do it yourself</h1>
       <RouterLink class="button-28 diy-btn" to="/diy">Make one</RouterLink>
     </div>
+
+
     <div class="container">
-      <div v-if="$store.state.showSaved">
+      <div v-if="$store.state.showCards">
         <PosterItem
-          v-for="poster in $store.state.posters"
-          :key="poster.key"
-          :title="poster.title"
-          :image-src="poster.imageSrc"
-          :bg-color="poster.bgColor"
-          :font-style="poster.fontStyle"
+          v-for="card in $store.state.cards"
+          :key="card.key"
+          :title="card.title"
+          :image-src="card.imageSrc"
+          :bg-color="card.bgColor"
+          :font-style="card.fontStyle"
         />
-                <!-- <button
-          v-if="$store.state.showRemoved"
-          class="button-28"
-          @click="$store.commit('removePoster', receivedPoster)"
-        >
-          Remove
-        </button> -->
       </div>
     </div>
   </div>
@@ -42,7 +42,7 @@
     flex-direction: column;
   }
 
-  .diy-btn{
+  .diy-btn {
     max-width: 420px;
   }
   .diy-btn:hover {

@@ -9,7 +9,7 @@
     <input
       v-if="quote"
       type="button"
-      value="Make me a poster yo"
+      value="Make me a card yo"
       @click="sendQuote"
       class="button-28"
     />

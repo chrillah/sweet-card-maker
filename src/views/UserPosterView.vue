@@ -2,27 +2,30 @@
   <div class="wrapper">
     <div class="container">
       <div class="button-container">
-        <RouterLink class="button-28 diy-btn" to="/diy"
-          >Make a new one</RouterLink>
+        <RouterLink v-if="!$store.state.showSaved" class="button-28 diy-btn" to="/diy">Make a new one</RouterLink>
+        <!-- <button v-if="show" @click="back" class="button-28">Back</button> -->
+
         <button
-          v-if="show"
+          type="button"
+          v-if="$store.state.showSaved"
           class="button-28"
-          @click="$store.commit('savedPosters', receivedPoster)"
+          @click="$store.commit('savedCards', receivedCard)"
         >
           Save
         </button>
+
         <!-- <button
           v-if="$store.state.showRemoved"
           class="button-28"
-          @click="$store.commit('removePoster', receivedPoster)"
+          @click="$store.commit('removeCard', receivedCard)"
         >
           Remove
         </button> -->
       </div>
-      <div class="container" v-if="!show">
+      <div class="container" v-if="!$store.state.showSaved">
         <UserPosterItem
-          @send-poster="received"
-          v-for="item in listOfPosters"
+          @send-card="received"
+          v-for="item in listOfCards"
           :key="item.id"
           :title="$route.params.inputFromUser"
           :image-src="item.image"
@@ -31,12 +34,12 @@
         />
       </div>
 
-      <div v-if="show">
+      <div v-if="$store.state.showSaved">
         <PosterItem
-          :title="receivedPoster.title"
-          :image-src="receivedPoster.imageSrc"
-          :bg-color="receivedPoster.bgColor"
-          :font-style="receivedPoster.fontStyle"
+          :title="receivedCard.title"
+          :image-src="receivedCard.imageSrc"
+          :bg-color="receivedCard.bgColor"
+          :font-style="receivedCard.fontStyle"
         />
       </div>
     </div>
@@ -48,27 +51,33 @@
   import axios from 'axios'
   export default {
     mounted() {
-      this.fetchPosters()
+      this.fetchCards()
     },
     methods: {
-      async fetchPosters() {
+      async fetchCards() {
         const response = await axios.get('testList.json', {
           headers: {
             Accept: 'application/json'
           }
         })
-        this.listOfPosters = response.data
+        this.listOfCards = response.data
       },
-      received(savedPoster) {
-        this.receivedPoster = savedPoster
-        this.show = true
+      back() {
+        // this.show = false
+        // this.$store.commit('hideRemoveButton')
+        // this.$store.commit('hideSaveButton')
+      },
+      received(savedCard) {
+        this.receivedCard = savedCard
+        // this.show = true
+        this.$store.commit('showSaveButton')
       }
     },
     data() {
       return {
-        listOfPosters: [],
-        receivedPoster: {},
-        show: false
+        listOfCards: [],
+        receivedCard: {},
+        // show: false
       }
     },
     components: {
@@ -84,6 +93,10 @@
     display: grid;
     gap: 1rem;
     grid-template-rows: 1fr 1fr;
+  }
+
+  .button-28 {
+    min-width: 320px;
   }
   .diy-btn:hover {
     color: #000000;
