@@ -68,6 +68,10 @@ body {
   transform: translateY(0);
 }
 
+.diy-btn:hover {
+  color: #000000;
+}
+
 /* BUTTONS TEST */
 
 h1,

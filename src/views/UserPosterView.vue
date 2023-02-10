@@ -3,8 +3,7 @@
     <div class="container">
       <div class="button-container">
         <RouterLink class="button-28 diy-btn" to="/diy"
-          >Make a new one</RouterLink
-        >
+          >Make a new one</RouterLink>
         <button
           v-if="show"
           class="button-28"

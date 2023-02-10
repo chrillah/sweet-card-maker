@@ -1,12 +1,14 @@
 <template>
-  <div class="hero-wrapper" :style="{ 'background-image': `url(${bgImage})` }" />
+  <div class="hero-wrapper" :style="{ 'background-image': `url(${bgImage})` }">
+    <RouterLink class="button-28 diy-btn hero-btn" to="/diy">Make a card</RouterLink>
+  </div>
 </template>
 
 <script>
   export default {
     data() {
       return {
-        bgImage : '/assets/img/sandro-katalina-k1bO_VTiZSs-unsplash.jpg',
+        bgImage: '/assets/img/sandro-katalina-k1bO_VTiZSs-unsplash.jpg',
         images: [
           '/assets/img/sandro-katalina-k1bO_VTiZSs-unsplash.jpg',
           '/assets/img/kiran-k-dZ_RZiMc6s0-unsplash.jpg',
@@ -17,11 +19,10 @@
     },
     created() {
       setInterval(() => {
-        this.index =
-          (this.index + 1) % this.images.length
+        this.index = (this.index + 1) % this.images.length
         this.bgImage = this.images[this.index]
       }, 2000)
-    },
+    }
   }
 </script>
 
@@ -31,5 +32,17 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-btn{
+    max-width: 300px;
+    /* position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
   }
 </style>
