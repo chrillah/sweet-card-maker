@@ -51,7 +51,7 @@
   }
 </script>
 <style scoped>
-  .poster-wrapper {
+  /* .poster-wrapper {
     padding: 2rem;
     margin-bottom: 2rem;
     box-shadow: var(--box-shadow);
@@ -64,7 +64,7 @@
     align-items: center;
   }
   .image-poster {
-    height: auto;
+    max-height: 70vh;
     width: 100%;
   }
 
@@ -94,5 +94,5 @@
       margin: 1rem;
       padding: 1rem;
     }
-  }
+  } */
 </style>

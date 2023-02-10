@@ -30,7 +30,8 @@ export default createRouter({
     {
       component : SavedPosterView,
       name: 'poster',
-      path : '/poster/:savedPoster'
+      path : '/poster'
+      // path : '/poster/:savedPoster'
     },
     {
       component : CrazyCornerView,

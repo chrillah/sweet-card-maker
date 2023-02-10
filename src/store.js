@@ -1,9 +1,26 @@
 import { createStore } from 'vuex'
 
 const mutations = {
-  increment(state) {
-    state.counter++
+  savedPosters(state, poster){
+    state.showSaved = true
+    state.posters.push(poster)
   },
+
+  removePoster(state, posterToRemove){
+    state.showRemoved = false
+    state.showSaved = true
+    const tempArray = state.posters
+    for(let i = 0; i< tempArray.length;i++){
+      if(!posterToRemove){
+        state.posters.push(tempArray[i])
+      }
+    }
+  },
+  // increment(state) {
+  //   state.counter++
+  // },
+
+
   moveCar(state) {
     state.numberOfClick++
     state.right += 10
@@ -15,7 +32,10 @@ const mutations = {
 }
 
 const state = {
-  counter: 0,
+  showSaved : false,
+  showRemoved : false,
+  posters : [],
+  // counter: 0,
   right: -50,
   numberOfClick: 0,
   posterStyles : [],

@@ -46,7 +46,7 @@
     }
   }
 </script>
-<style scoped>
+<!-- <style scoped>
   .poster-wrapper {
     padding: 2rem;
     margin-bottom: 2rem;
@@ -79,4 +79,4 @@
       padding: 1rem;
     }
   }
-</style>
+</style> -->

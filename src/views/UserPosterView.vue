@@ -2,12 +2,28 @@
   <div class="wrapper">
     <div class="container">
       <div class="button-container">
-        <RouterLink class="button-28 diy-btn" to="/diy">Make a new one</RouterLink>
+        <RouterLink class="button-28 diy-btn" to="/diy"
+          >Make a new one</RouterLink
+        >
+        <button
+          v-if="show"
+          class="button-28"
+          @click="$store.commit('savedPosters', receivedPoster)"
+        >
+          Save
+        </button>
+        <!-- <button
+          v-if="$store.state.showRemoved"
+          class="button-28"
+          @click="$store.commit('removePoster', receivedPoster)"
+        >
+          Remove
+        </button> -->
       </div>
       <div class="container" v-if="!show">
-        <TestPosterItem
+        <UserPosterItem
           @send-style="received"
-          v-for="item in list"
+          v-for="item in listOfPosters"
           :key="item.id"
           :title="$route.params.inputFromUser"
           :image-src="item.image"
@@ -18,10 +34,10 @@
 
       <div v-if="show">
         <PosterItem
-          :title="receivedObject.title"
-          :image-src="receivedObject.imageSrc"
-          :bg-color="receivedObject.bgColor"
-          :font-style="receivedObject.fontStyle"
+          :title="receivedPoster.title"
+          :image-src="receivedPoster.imageSrc"
+          :bg-color="receivedPoster.bgColor"
+          :font-style="receivedPoster.fontStyle"
         />
       </div>
     </div>
@@ -29,47 +45,46 @@
 </template>
 <script>
   import PosterItem from '../components/PosterItem.vue'
-  import TestPosterItem from '../components/TestPosterItem.vue'
+  import UserPosterItem from '../components/UserPosterItem.vue'
   import axios from 'axios'
   export default {
     mounted() {
-      this.fetchData()
+      this.fetchPosters()
     },
     methods: {
-      async fetchData() {
-        const res = await axios.get('testList.json', {
+      async fetchPosters() {
+        const response = await axios.get('testList.json', {
           headers: {
             Accept: 'application/json'
           }
         })
-        this.list = res.data
+        this.listOfPosters = response.data
       },
       received(savedPoster) {
-        this.receivedObject = savedPoster
-        
-        // console.log(this.receivedObject)
-        // this.$router.push({ name : 'poster', path : '/poster', params:{ savedPoster } })
-
+        this.receivedPoster = savedPoster
         this.show = true
       }
     },
     data() {
       return {
-        list: [],
-        receivedObject: {},
+        listOfPosters: [],
+        receivedPoster: {},
         show: false
       }
     },
     components: {
       PosterItem,
-      TestPosterItem
+      UserPosterItem
     }
   }
 </script>
 <style scoped>
   .button-container {
     margin: 5rem;
-    align-content: center;
+    /* align-content: center; */
+    display: grid;
+    gap: 1rem;
+    grid-template-rows: 1fr 1fr;
   }
   .diy-btn:hover {
     color: #000000;
