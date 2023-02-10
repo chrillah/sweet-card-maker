@@ -22,7 +22,7 @@
       </div>
       <div class="container" v-if="!show">
         <UserPosterItem
-          @send-style="received"
+          @send-poster="received"
           v-for="item in listOfPosters"
           :key="item.id"
           :title="$route.params.inputFromUser"

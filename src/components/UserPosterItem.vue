@@ -20,14 +20,14 @@
         font: this.fontStyle
       }
     },
-    emits: ['sendStyle'],
+    emits: ['sendPoster'],
     methods: {
       saveStyle() {
         this.style.title = this.name
         this.style.imageSrc = this.image
         this.style.bgColor = this.color
         this.style.fontStyle = this.font
-        this.$emit('sendStyle', this.style)
+        this.$emit('sendPoster', this.style)
       }
     },
     props: {
@@ -50,49 +50,3 @@
     }
   }
 </script>
-<style scoped>
-  /* .poster-wrapper {
-    padding: 2rem;
-    margin-bottom: 2rem;
-    box-shadow: var(--box-shadow);
-  }
-  .poster-container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .image-poster {
-    max-height: 70vh;
-    width: 100%;
-  }
-
-  .name-title {
-    text-align: center;
-    background-color: #ffffff;
-    padding: 1rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .btn{
-    border: none;
-    background: none;
-    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
-    will-change: transform;
-  }
-
-  .btn:hover{
-    transform: translateY(-4px);
-
-  }
-
-  @media (max-width: 450px) {
-    .poster-wrapper {
-      margin: 1rem;
-      padding: 1rem;
-    }
-  } */
-</style>

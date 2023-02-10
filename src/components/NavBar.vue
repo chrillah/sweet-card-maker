@@ -43,10 +43,7 @@
   color: black;
 }
 .nav-link:hover,.nav-link:focus{
-  /* background-color: indigo; */
-  /* color: white; */
   background-color: var(--active-color);
-
   font-weight: 400;
 }
 
