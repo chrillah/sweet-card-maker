@@ -18,7 +18,7 @@
           <RouterLink class="nav-link" aria-current="page" to="/">Home</RouterLink>
           <RouterLink class="nav-link" to="/collection">Collection</RouterLink>
           <RouterLink class="nav-link" to="/diy">DIY</RouterLink>
-          <RouterLink class="nav-link" to="/poster">Poster</RouterLink>
+          <RouterLink class="nav-link" to="/poster">Your Cards</RouterLink>
         </div>
       </div>
     </div>

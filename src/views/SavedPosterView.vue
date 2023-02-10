@@ -36,8 +36,14 @@
 </script>
 <style scoped>
   .button-container {
-    margin: 5rem;
-    align-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .diy-btn{
+    max-width: 420px;
   }
   .diy-btn:hover {
     color: #000000;

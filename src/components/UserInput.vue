@@ -54,6 +54,7 @@
     background-color: #ffffff;
     box-shadow: var(--box-shadow);
     min-height: 250px;
+    max-width: 420px;
   }
 
   .input-container {
