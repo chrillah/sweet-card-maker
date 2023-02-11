@@ -3,6 +3,8 @@
     <div class="container">
       <div class="button-container">
         <RouterLink v-if="!$store.state.showSaved" class="button-28 diy-btn" to="/diy">Make a new one</RouterLink>
+        <!-- <RouterLink v-if="!$store.state.showSaved" class="button-28 diy-btn" to="/poster">Your collection of cards</RouterLink> -->
+
         <button v-if="$store.state.showSaved" @click="$store.commit('back')" class="button-28">Back</button>
 
         <button

@@ -18,7 +18,7 @@
           <RouterLink class="nav-link" aria-current="page" to="/">Home</RouterLink>
           <RouterLink class="nav-link" to="/collection">Collection</RouterLink>
           <RouterLink class="nav-link" to="/diy">DIY</RouterLink>
-          <RouterLink class="nav-link" to="/poster">Your Cards {{ numberOfCards }}</RouterLink>
+          <RouterLink class="nav-link" to="/poster">{{ numberOfCards }}</RouterLink>
         </div>
       </div>
     </div>
@@ -29,7 +29,7 @@
 export default{
   computed:{
     numberOfCards(){
-      return this.$store.state.cards.length
+        return 'Your Cards ' + this.$store.state.cards.length
     }
   }
 }
