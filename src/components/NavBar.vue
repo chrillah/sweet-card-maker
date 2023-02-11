@@ -18,13 +18,22 @@
           <RouterLink class="nav-link" aria-current="page" to="/">Home</RouterLink>
           <RouterLink class="nav-link" to="/collection">Collection</RouterLink>
           <RouterLink class="nav-link" to="/diy">DIY</RouterLink>
-          <RouterLink class="nav-link" to="/poster">Your Cards</RouterLink>
+          <RouterLink class="nav-link" to="/poster">Your Cards {{ numberOfCards }}</RouterLink>
         </div>
       </div>
     </div>
   </nav>
   <RouterView />
 </template>
+<script>
+export default{
+  computed:{
+    numberOfCards(){
+      return this.$store.state.cards.length
+    }
+  }
+}
+</script>
 <style scoped>
 .navbar{
   z-index: 100;

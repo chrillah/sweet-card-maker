@@ -3,8 +3,8 @@
     <div class="input-container">
       <p class="label">Write a quote</p>
       <input type="text" v-model="quote" />
-      <p v-if="quote">Here is your quote</p>
-      <h1>{{ quote }}</h1>
+      <!-- <p v-if="quote">Here is your quote</p>
+      <h1>{{ quote }}</h1> -->
     </div>
     <input
       v-if="quote"
