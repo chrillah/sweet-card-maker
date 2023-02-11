@@ -1,10 +1,12 @@
 <template>
-  <div class="card-wrapper">
-    <div class="card-container">
-      <img class="card-image" :src="cardImage" />
-      <h1 :class="cardFontStyle">{{ cardTitle }}</h1>
+  <button class="btn" @click="saveStyle">
+    <div class="card-wrapper">
+      <div class="card-container">
+        <img class="card-image" :src="cardImage" />
+        <h1 :class="cardFontStyle">{{ cardTitle }}</h1>
+      </div>
     </div>
-  </div>
+  </button>
 </template>
 
 <script>
@@ -17,7 +19,15 @@
         cardFontStyle: this.fontStyle
       }
     },
-
+    emits: ['sendCard'],
+    methods: {
+      saveStyle() {
+        this.style.title = this.cardTitle
+        this.style.imageSrc = this.cardImage
+        this.style.fontStyle = this.cardFontStyle
+        this.$emit('sendCard', this.style)
+      }
+    },
     props: {
       title: {
         type: String,
@@ -38,7 +48,6 @@
   .card-wrapper {
     padding: 2rem;
     margin-bottom: 2rem;
-
   }
   .card-container {
     position: relative;

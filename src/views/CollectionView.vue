@@ -1,8 +1,8 @@
 <script>
-  import PosterList from '../components/PosterList.vue'
+  import CardList from '../components/CardList.vue';
   export default {
     components: {
-      PosterList
+      CardList
     }
   }
 </script>
@@ -10,7 +10,8 @@
   <div class="wrapper">
     <h1 class="intro-text">Some of our collection</h1>
     <div class="grid-container">
-      <PosterList />
+      <CardList />
+      <!-- <PosterList /> -->
     </div>
   </div>
 </template>
