@@ -12,6 +12,14 @@ const mutations = {
 
   },
 
+  numberOfCards(state){
+    return state.cards.length
+  },
+
+  back(state){
+    state.showSaved = false
+  },
+
   showSaveButton(state) {
     state.showSaved = true
     state.showRemoved = false
