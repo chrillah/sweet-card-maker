@@ -50,18 +50,6 @@ const mutations = {
       state.showCards = false
     }
   }
-  // increment(state) {
-  //   state.counter++
-  // },
-
-  // moveCar(state) {
-  //   state.numberOfClick++
-  //   state.right += 10
-  //   if (state.numberOfClick > 20) {
-  //     state.right = -50
-  //     state.numberOfClick = 0
-  //   }
-  // }
 }
 
 const state = {
@@ -71,9 +59,7 @@ const state = {
   showRemoved: false,
   showCards: false,
   cards: []
-  // counter: 0,
-  // right: -50,
-  // numberOfClick: 0,
+
   // posterStyles: [],
   // fonts: {
   //   mono: "font-family: 'Xanh Mono', monospace;",
