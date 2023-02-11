@@ -55,6 +55,9 @@
     mounted() {
       this.fetchCards()
     },
+    created() {
+      this.fetchCards()
+    },
     methods: {
       async fetchCards() {
         const response = await axios.get('testList.json', {
@@ -64,14 +67,8 @@
         })
         this.listOfCards = response.data
       },
-      back() {
-        // this.show = false
-        // this.$store.commit('hideRemoveButton')
-        // this.$store.commit('hideSaveButton')
-      },
       received(savedCard) {
         this.receivedCard = savedCard
-        // this.show = true
         this.$store.commit('showSaveButton')
       }
     },
@@ -79,7 +76,6 @@
       return {
         listOfCards: [],
         receivedCard: {},
-        // show: false
       }
     },
     components: {
