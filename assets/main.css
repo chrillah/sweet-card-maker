@@ -185,6 +185,20 @@ p {
   1px 22px 10px rgba(16,16,16,0.2),
   1px 25px 35px rgba(16,16,16,0.2),
   1px 30px 60px rgba(16,16,16,0.4);
+  /* text-shadow: 1px 1px 1px #c75b5b,
+  1px 2px 1px #c75b5b,
+  3px 3px 1px #c75b5b,
+  3px 4px 1px #c75b5b,
+  5px 5px 1px #c75b5b,
+  6px 6px 1px #c75b5b,
+  7px 7px 1px #c75b5b,
+  8px 8px 1px #c75b5b,
+  9px 9px 1px #c75b5b,
+  10px 10px 1px #c75b5b,
+1px 18px 6px rgba(16,16,16,0.4),
+1px 22px 10px rgba(16,16,16,0.2),
+1px 25px 35px rgba(16,16,16,0.2),
+1px 30px 60px rgba(16,16,16,0.4); */
 }
 
 .text-style-2 {
@@ -193,13 +207,14 @@ p {
   right: 50%;
   transform: translate(50%,-50%);
   text-transform: uppercase;
+  /* font-family: arial rounded MT; */
   font-family: arial rounded MT;
   font-size: 2em;
   font-weight: 700;
-  color: #47f3ff;
+  color: #FFFFFF;
   text-shadow: 1px 1px 1px #5ff6ff,
       1px 2px 1px #008aff,
-      1px 3px 1px #008aff,
+      1px 4px 1px #008aff,
      -1px  3px 2px #008aff,
      -1px -1px 1px #0064b8,
       2px -1px 2px #0064b8,
@@ -210,6 +225,8 @@ p {
 }
 
 .text-style-3{
+  /* font-family: 'Xanh Mono', monospace; */
+  font-family: Arial, Helvetica, sans-serif;
   position: absolute;
   top: 50%;
   right: 50%;
@@ -217,6 +234,20 @@ p {
   color: var(--active-color);
   /* letter-spacing: .15em; */
   text-shadow:
+    -1px -1px 1px #efede3,
+    0px 1px 0 #000000,
+    0px 2px 0 #000000,
+    0px 3px 0 #000000,    0px 4px 0 #000000,    0px 5px 0 #000000,    0px 6px 0 #000000,    0px 7px 0 #000000,    0px 8px 0 #000000,    0px 9px 0 #000000,    0px 10px 0#000000,
+    0px 11px 0#000000,
+    0px 12px 0#000000,
+    0px 13px 0#000000,
+    0px 14px 0#000000,
+    0px 15px 0#000000,
+    2px 20px 5px rgba(0, 0, 0, 0.9),
+    5px 23px 5px rgba(0, 0, 0, 0.3),
+    8px 27px 8px rgba(0, 0, 0, 0.5),
+    8px 28px 35px rgba(0, 0, 0, 0.9);
+  /* text-shadow:
     -1px -1px 1px #efede3,
     0px 1px 0 #2e2e2e,
     0px 2px 0 #2c2c2c,
@@ -236,10 +267,11 @@ p {
     2px 20px 5px rgba(0, 0, 0, 0.9),
     5px 23px 5px rgba(0, 0, 0, 0.3),
     8px 27px 8px rgba(0, 0, 0, 0.5),
-    8px 28px 35px rgba(0, 0, 0, 0.9);
+    8px 28px 35px rgba(0, 0, 0, 0.9); */
 }
 
 .text-style-4 {
+  font-weight: 900;
   position: absolute;
   top: 50%;
   right: 50%;

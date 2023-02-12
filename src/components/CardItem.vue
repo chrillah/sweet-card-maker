@@ -35,11 +35,11 @@
   }
 </script>
 <style scoped>
-  .card-wrapper {
+  /* .card-wrapper {
     padding: 2rem;
     margin-bottom: 2rem;
 
-  }
+  } */
   .card-container {
     position: relative;
     display: flex;
@@ -47,6 +47,7 @@
     justify-content: center;
     align-items: center;
     box-shadow: var(--box-shadow);
+    margin-bottom: 2rem;
   }
   .card-image {
     height: auto;
