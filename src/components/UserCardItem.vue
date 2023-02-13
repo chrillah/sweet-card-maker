@@ -23,7 +23,7 @@
     methods: {
       saveStyle() {
         this.style.title = this.cardTitle
-        this.style.imageSrc = this.cardImage
+        this.style.image = this.cardImage
         this.style.fontStyle = this.cardFontStyle
         this.$emit('sendCard', this.style)
       }

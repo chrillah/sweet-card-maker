@@ -2,10 +2,19 @@
   <div class="wrapper">
     <div class="container">
       <div class="button-container">
-        <RouterLink v-if="!$store.state.showSaved" class="button-28 diy-btn" to="/diy">Make a new one</RouterLink>
+        <RouterLink
+          v-if="!$store.state.showSaved"
+          class="button-28 diy-btn"
+          to="/diy">Make a new one</RouterLink>
         <!-- <RouterLink v-if="!$store.state.showSaved" class="button-28 diy-btn" to="/poster">Your collection of cards</RouterLink> -->
 
-        <button v-if="$store.state.showSaved" @click="$store.commit('back')" class="button-28">Back</button>
+        <button
+          v-if="$store.state.showSaved"
+          @click="$store.commit('back')"
+          class="button-28"
+        >
+          Back
+        </button>
 
         <button
           type="button"
@@ -25,7 +34,15 @@
         </button> -->
       </div>
       <div class="container" v-if="!$store.state.showSaved">
-        <UserPosterItem
+        <UserCardItem
+          v-for="card in listOfCards"
+          @send-card="received"
+          :key="card.id"
+          :title="$route.params.inputFromUser"
+          :image="card.image"
+          :font-style="card.fontStyle"
+        />
+        <!-- <UserPosterItem
           @send-card="received"
           v-for="item in listOfCards"
           :key="item.id"
@@ -33,23 +50,30 @@
           :image-src="item.image"
           :bg-color="item.color"
           :font-style="item.fontStyle"
-        />
+        /> -->
       </div>
 
       <div v-if="$store.state.showSaved">
-        <PosterItem
+        <CardItem
+          :font-style="receivedCard.fontStyle"
+          :image="receivedCard.image"
+          :title="receivedCard.title"
+        />
+        <!-- <PosterItem
           :title="receivedCard.title"
           :image-src="receivedCard.imageSrc"
           :bg-color="receivedCard.bgColor"
           :font-style="receivedCard.fontStyle"
-        />
+        /> -->
       </div>
     </div>
   </div>
 </template>
 <script>
-  import PosterItem from '../components/PosterItem.vue'
-  import UserPosterItem from '../components/UserPosterItem.vue'
+  import UserCardItem from '../components/UserCardItem.vue'
+  import CardItem from '../components/CardItem.vue'
+  // import PosterItem from '../components/PosterItem.vue'
+  // import UserPosterItem from '../components/UserPosterItem.vue'
   import axios from 'axios'
   export default {
     mounted() {
@@ -60,7 +84,7 @@
     },
     methods: {
       async fetchCards() {
-        const response = await axios.get('testList.json', {
+        const response = await axios.get('listOfObjects.json', {
           headers: {
             Accept: 'application/json'
           }
@@ -75,12 +99,14 @@
     data() {
       return {
         listOfCards: [],
-        receivedCard: {},
+        receivedCard: {}
       }
     },
     components: {
-      PosterItem,
-      UserPosterItem
+      CardItem,
+      UserCardItem
+      // PosterItem,
+      // UserPosterItem
     }
   }
 </script>
