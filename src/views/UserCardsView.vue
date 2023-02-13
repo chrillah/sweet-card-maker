@@ -5,7 +5,11 @@
         <RouterLink
           v-if="!$store.state.showSaved"
           class="button-28 diy-btn"
-          to="/diy">Make a new one</RouterLink>
+          to="/diy"
+        >
+          Make
+          a new one
+        </RouterLink>
         <!-- <RouterLink v-if="!$store.state.showSaved" class="button-28 diy-btn" to="/poster">Your collection of cards</RouterLink> -->
 
         <button

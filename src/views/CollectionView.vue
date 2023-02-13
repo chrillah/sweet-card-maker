@@ -17,7 +17,7 @@
 </template>
 
 <style scoped>
-  .grid-container {
+  /* .grid-container {
     margin: 0 2rem;
     line-height: 0;
     -webkit-column-count: 1;
@@ -51,5 +51,5 @@
       column-count:3;
       column-gap: 2rem;
     }
-  }
+  } */
 </style>
