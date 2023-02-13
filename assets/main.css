@@ -119,6 +119,7 @@ p {
   justify-content: center;
   align-items: center;
 }
+
 .image-poster {
   max-height: 70vh;
   width: 100%;
@@ -136,13 +137,14 @@ p {
 
 .card-container {
   position: relative;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   box-shadow: var(--box-shadow);
   margin-bottom: 2rem;
 }
+
 .card-image {
   height: auto;
   width: 100%;
