@@ -347,6 +347,7 @@ p {
   -moz-column-gap: 0px;
   column-count: 1;
   column-gap: 2rem;
+  padding-bottom: 5rem;
 }
 
 @media (max-width: 450px) {
