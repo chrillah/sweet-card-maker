@@ -3,7 +3,7 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import CollectionView from './views/CollectionView.vue'
 import HomeView from './views/HomeView.vue'
 import DiyView from './views/DiyView.vue'
-import UserPosterView from './views/UserPosterView.vue'
+import UserCardsView from './views/UserCardsView.vue'
 import SavedPosterView from './views/SavedPosterView.vue'
 
 export default createRouter({
@@ -22,7 +22,7 @@ export default createRouter({
       path: '/'
     },
     {
-      component : UserPosterView,
+      component : UserCardsView,
       name : 'user',
       path: '/user/:inputFromUser'
     },

@@ -40,7 +40,7 @@
     margin-bottom: 2rem;
 
   } */
-  .card-container {
+  /* .card-container {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -52,7 +52,7 @@
   .card-image {
     height: auto;
     width: 100%;
-  }
+  } */
   /* .name-title {
     text-align: center;
     background-color: #ffffff;
@@ -63,10 +63,10 @@
     transform: translate(-50%, -50%);
   } */
 
-  @media (max-width: 450px) {
+  /* @media (max-width: 450px) {
     .card-wrapper {
       margin: 1rem;
       padding: 1rem;
     }
-  }
+  } */
 </style>
