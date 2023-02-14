@@ -47,7 +47,7 @@
     width: 100%;
     padding: 1rem;
     background-color: #ffffff;
-    box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow-2);
     min-height: 250px;
     max-width: 420px;
   }
