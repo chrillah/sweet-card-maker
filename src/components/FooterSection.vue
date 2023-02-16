@@ -2,22 +2,21 @@
   <div class="footer-wrapper">
     <div class="footer-container">
       <div class="footer-items">
-        <h1 class="footer-info">Info</h1>
-        <p class="footer-text">More info</p>
-        <img class="footer-logo" src="/assets/img/logo.png" alt="" />
+        <!-- <h1 class="footer-info">Info</h1>
+        <p class="footer-text">More info</p> -->
+        <img class="footer-logo" src="/assets/img/logo_v2.png" alt="" />
       </div>
       <div class="footer-items">
         <p class="footer-text">
           <a href="https://unsplash.com/">All pictures</a>
         </p>
-        <!-- <div class="footer-logo" /> -->
       </div>
     </div>
   </div>
 </template>
 <style>
   .footer-wrapper {
-    min-height: 20vh;
+    min-height: 10vh;
     background-color: #000000;
     /* display: flex;
     flex-direction: column;
@@ -28,8 +27,7 @@
   .footer-container {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    /* gap: 1rem; */
   }
 
   .footer-items {
@@ -42,7 +40,7 @@
 
   .footer-logo {
     /* background-image: url('./assets/img/logo.png'); */
-    width: 80px;
+    width: 50px;
     height: auto;
   }
 

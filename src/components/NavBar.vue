@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <RouterLink class="navbar-brand" to="/"><img class="logo" src="/assets/img/logo.png" alt="" /></RouterLink>
+      <RouterLink class="navbar-brand" to="/"><img class="logo" src="/assets/img/logo_v3.png" alt="" /></RouterLink>
       <button
         class="navbar-toggler"
         type="button"
@@ -47,7 +47,7 @@ export default{
   background-color: #FFFFFF;
 }
 .logo{
-  width: 100px;
+  width: 50px;
   height: auto;
 }
 
@@ -56,7 +56,7 @@ export default{
   font-weight: 800;
   color: black;
 }
-.nav-link:hover,.nav-link:focus{
+.nav-link:hover,.nav-link:focus, .logo:hover{
   background-color: var(--active-color);
   font-weight: 400;
 }

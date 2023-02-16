@@ -21,7 +21,7 @@
       setInterval(() => {
         this.index = (this.index + 1) % this.images.length
         this.bgImage = this.images[this.index]
-      }, 2000)
+      }, 1000)
     }
   }
 </script>
