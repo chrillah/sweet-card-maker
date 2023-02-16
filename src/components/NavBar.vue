@@ -24,9 +24,14 @@
     </div>
   </nav>
   <RouterView />
+  <FooterSection />
 </template>
 <script>
+import FooterSection from './FooterSection.vue';
 export default{
+  components:{
+    FooterSection
+  },
   computed:{
     numberOfCards(){
         return 'Your Cards ' + this.$store.state.cards.length
