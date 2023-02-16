@@ -50,7 +50,13 @@
   }
 
   .footer-text a {
+    padding: .5rem;
     color: #ffffff;
     text-decoration: none;
+  }
+
+  .footer-text a:hover{
+    background-color: var(--active-color);
+    color: #000000;
   }
 </style>
