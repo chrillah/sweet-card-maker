@@ -50,7 +50,7 @@
     box-shadow: var(--box-shadow-2);
     min-height: 250px;
     max-width: 420px;
-    margin-bottom: 6rem;
+    margin-bottom: 2rem;
   }
 
   .input-container {
