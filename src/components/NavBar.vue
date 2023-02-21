@@ -19,6 +19,7 @@
           <RouterLink class="nav-link" to="/collection">Collection</RouterLink>
           <RouterLink class="nav-link" to="/diy">DIY</RouterLink>
           <RouterLink class="nav-link" to="/poster">{{ numberOfCards }}</RouterLink>
+          <RouterLink class="nav-link" to="/products">Products</RouterLink>
         </div>
       </div>
     </div>
