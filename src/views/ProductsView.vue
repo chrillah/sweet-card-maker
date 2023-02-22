@@ -2,8 +2,10 @@
   <div class="products-wrapper">
     <div class="products-container">
       <ProductItem
+        class="product-item"
         v-for="product in products"
         :key="product.id"
+        @click="sendId(product.id)"
         :image="product.image"
         :price="product.price"
         :title="product.title"
@@ -13,6 +15,9 @@
 </template>
 
 <style>
+  .product-item {
+    cursor: pointer;
+  }
   .products-wrapper {
     background-color: white;
     padding-top: 8rem;
@@ -24,25 +29,25 @@
   }
 
   @media (min-width: 375px) {
-    .products-container{
+    .products-container {
       grid-template-columns: 1fr 1fr;
     }
   }
 
   @media (min-width: 500px) {
-    .products-container{
+    .products-container {
       grid-template-columns: 1fr 1fr 1fr;
     }
   }
 
   @media (min-width: 768px) {
-    .products-container{
+    .products-container {
       grid-template-columns: 1fr 1fr 1fr 1fr;
     }
   }
 
   @media (min-width: 1024px) {
-    .products-container{
+    .products-container {
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
   }
@@ -58,14 +63,19 @@
     mounted() {
       this.fetchProducts()
     },
+    emits: ['id-selected'],
     methods: {
+      sendId(id) {
+        console.log(id)
+        this.$emit('id-selected', id)
+      },
       async fetchProducts() {
-        const res = await axios.get('productapi.json', {
+        const result = await axios.get('productapi.json', {
           headers: {
             Accept: 'application/json'
           }
         })
-        this.products = res.data
+        this.products = result.data
       }
     },
     data() {

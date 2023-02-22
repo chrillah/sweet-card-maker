@@ -16,6 +16,7 @@
   export default {
     data() {
       return {
+        productId : '',
         productTitle: this.title,
         productImage: this.image,
         productPrice: this.price
