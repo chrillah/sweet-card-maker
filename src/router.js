@@ -5,7 +5,6 @@ import HomeView from './views/HomeView.vue'
 import DiyView from './views/DiyView.vue'
 import UserCardsView from './views/UserCardsView.vue'
 import SavedPosterView from './views/SavedPosterView.vue'
-import ProductsView from './views/ProductsView.vue'
 
 export default createRouter({
   history: createWebHashHistory(),
@@ -23,18 +22,14 @@ export default createRouter({
       path: '/'
     },
     {
-      component : UserCardsView,
-      name : 'user',
+      component: UserCardsView,
+      name: 'user',
       path: '/user/:inputFromUser'
     },
     {
-      component : SavedPosterView,
+      component: SavedPosterView,
       name: 'poster',
-      path : '/poster'
-    },
-    {
-      component : ProductsView,
-      path :  "/products"
+      path: '/poster'
     }
   ]
 })
