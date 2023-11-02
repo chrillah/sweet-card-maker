@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <div class="container">
+    <div class="save-container">
       <div class="button-container">
         <RouterLink
           v-if="!$store.state.showSaved"

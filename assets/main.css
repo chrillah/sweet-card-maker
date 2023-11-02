@@ -96,13 +96,23 @@ p {
 }
 
 .container {
+  margin-top: 5rem;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  /* padding: 2rem; */
   margin-bottom: 2rem;
+}
+
+.save-container{
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .intro-section {
