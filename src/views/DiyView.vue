@@ -8,9 +8,11 @@
 </script>
 <template>
   <div class="wrapper">
-    <h1 class="intro-text">Do it yourself</h1>
-    <div class="container">
-      <UserInput />
+    <div class="diy-container">
+      <div class="diy-item">
+        <h1 class="intro-text">Do it yourself</h1>
+        <UserInput />
+      </div>
     </div>
   </div>
 </template>
