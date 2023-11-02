@@ -107,6 +107,7 @@ p {
 }
 
 .save-container{
+  padding: .5rem;
   min-height: 100vh;
   width: 100%;
   display: flex;
