@@ -54,7 +54,6 @@ body {
   touch-action: manipulation;
   width: 100%;
   will-change: transform;
-  margin: 2rem;
 }
 
 .button-28:disabled {
