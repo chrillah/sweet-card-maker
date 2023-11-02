@@ -39,9 +39,16 @@
   }
 
   .diy-btn {
-    max-width: 420px;
+    max-width: 300px;
   }
+
   .diy-btn:hover {
     color: #000000;
+  }
+
+  @media (min-width: 700px) {
+    .diy-btn {
+    max-width: 420px;
+  }
   }
 </style>
