@@ -69,12 +69,12 @@
     width: 100%;
     position: fixed;
     background-color: #ffffff;
-    padding-bottom: 2rem;
     transition: all ease-in 300ms;
   }
 
   .nav-bar-shadow{
    box-shadow: rgba(203, 183, 255, 0.7) 0px 22px 70px 4px;
+   padding-bottom: 2rem;
   }
   .logo {
     width: 50px;
