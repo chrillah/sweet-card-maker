@@ -18,13 +18,15 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <RouterLink
-            class="nav-link" aria-current="page"
-            to="/" >Home</RouterLink>
+          <RouterLink class="nav-link" aria-current="page" to="/"
+            >Home</RouterLink
+          >
           <RouterLink class="nav-link" to="/collection">Collection</RouterLink>
           <RouterLink class="nav-link" to="/diy">DIY</RouterLink>
           <RouterLink class="nav-link" to="/poster">
-            <div v-if="this.$store.state.cards.length !== 0">{{ numberOfCards }}</div>
+            <div v-if="this.$store.state.cards.length !== 0">
+              {{ numberOfCards }}
+            </div>
             <div v-if="this.$store.state.cards.length === 0">No cards</div>
           </RouterLink>
         </div>
@@ -37,10 +39,10 @@
 <script>
   import FooterSection from './FooterSection.vue'
   export default {
-    data(){
-      return{
-        class : 'navbar navbar-expand-lg bg-body-tertiary',
-        menuOpen: false,
+    data() {
+      return {
+        class: 'navbar navbar-expand-lg bg-body-tertiary',
+        menuOpen: false
       }
     },
     components: {
@@ -54,7 +56,7 @@
     methods: {
       onMenu() {
         this.menuOpen = !this.menuOpen
-        if(this.menuOpen){
+        if (this.menuOpen) {
           this.class = 'navbar navbar-expand-lg bg-body-tertiary nav-bar-shadow'
         } else {
           this.class = 'navbar navbar-expand-lg bg-body-tertiary'
@@ -72,9 +74,9 @@
     transition: all ease-in 300ms;
   }
 
-  .nav-bar-shadow{
-   box-shadow: rgba(203, 183, 255, 0.7) 0px 22px 70px 4px;
-   padding-bottom: 2rem;
+  .nav-bar-shadow {
+    box-shadow: rgba(203, 183, 255, 0.7) 0px 22px 70px 4px;
+    padding-bottom: 2rem;
   }
   .logo {
     width: 50px;
